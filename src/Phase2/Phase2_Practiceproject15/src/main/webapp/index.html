@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Operations</title>
+</head>
+<body>
+    <h1>Database Operations</h1>
+    <h2>Create Database</h2>
+    <form action="DBCreateServlet" method="post">
+        Database Name: <input type="text" name="dbname">
+        <input type="submit" value="Create">
+    </form>
+
+    <h2>Use Database</h2>
+    <form action="DBUseServlet" method="post">
+        Database Name: <input type="text" name="dbname">
+        <input type="submit" value="Use">
+    </form>
+
+    <h2>Drop Database</h2>
+    <form action="DBDropServlet" method="post">
+        Database Name: <input type="text" name="dbname">
+        <input type="submit" value="Drop">
+    </form>
+</body>
+</html>

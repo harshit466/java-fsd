@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Phase2_Practiceproject15</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>DBCreateServlet</servlet-name>
+        <servlet-class>DBCreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBCreateServlet</servlet-name>
+        <url-pattern>/DBCreateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DBUseServlet</servlet-name>
+        <servlet-class>DBUseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBUseServlet</servlet-name>
+        <url-pattern>/DBUseServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DBDropServlet</servlet-name>
+        <servlet-class>DBDropServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBDropServlet</servlet-name>
+        <url-pattern>/DBDropServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
